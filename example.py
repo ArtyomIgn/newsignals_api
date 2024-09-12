@@ -1,6 +1,6 @@
 import requests
 
-url = 'https://api.rosggram.ru/news/signals'
+url = 'https://oh.sssh.it/news/signals'
 
 response = requests.get(url)
 if response.status_code == 200:

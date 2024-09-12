@@ -8,7 +8,7 @@ logging.basicConfig(
     handlers=[logging.StreamHandler()]
 )
 
-url = 'https://api.rosggram.ru/news/signals'
+url = 'https://oh.sssh.it/news/signals'
 
 def check_new_news(latest_news, news_data):
     new_news = []
