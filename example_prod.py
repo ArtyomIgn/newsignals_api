@@ -8,7 +8,8 @@ logging.basicConfig(
     handlers=[logging.StreamHandler()]
 )
 
-url = 'https://oh.sssh.it/news/signals'
+url = "https://oh.sssh.it/news/free-signals"
+token = '...' # Insert your token here
 
 def check_new_news(latest_news, news_data):
     new_news = []
@@ -29,7 +30,8 @@ session = requests.Session()
 
 session.headers.update({
     'User-Agent': 'news-checker/1.0',
-    'Accept': 'application/json'
+    'Accept': 'application/json',
+    'token': token 
 })
 
 while True:
