@@ -19,7 +19,7 @@ def check_new_news(latest_news, news_data):
             new_news.append(news)
             if news['published_primary_source'] > latest['published_primary_source']:
                 latest = news
-        elif news['published_primary_source'] == latest_news['published_primary_source'] and news != latest_news:
+        elif news['published_primary_source'] == latest_news['published_primary_source'] and news['tickers'] != latest_news['tickers']:
             new_news.append(news)
     return new_news, latest
 
